@@ -1,0 +1,149 @@
+@import 'normalize.css';
+
+/* Pablo Fernández _ JSB08VI-2021 */
+
+body {
+    font-family: arial, sans-serif;
+    /* Fuente sin serifa */
+    padding: 0px;
+}
+
+header,
+main {
+    max-width: 768px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+
+header {
+    background-color: #6395ec;
+    height: 80px;
+    font-size: 12px;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+/* Materiales */
+
+main section:first-child {
+    background-color: white;
+    height: 240px;
+    padding: 10px 25px;
+}
+
+/* Títulos h2 Materiales + Horario */
+
+main h2 {
+    margin: 0;
+    padding: 10px 0;
+    color: #6395ec;
+    font-size: 20px;
+}
+
+/* Lista de objetos */
+
+main ul {
+    margin: 0;
+    padding: 10px 35px;
+    height: 75%;
+    color: #14070a;
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* escalable */
+    gap: 8px;
+}
+
+.importante {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* Horario */
+
+main section:nth-child(2) {
+    background-color: white;
+    height: 300px;
+    padding: 10px 25px;
+}
+
+table {
+    border-collapse: separate;
+    height: 75%;
+    text-align: left;
+    padding: 10px;
+    table-layout: auto;
+    width: 60%;
+    font-size: 15px;
+}
+
+/*Primera columna de la tabla */
+
+tbody th {
+    background-color: rgba(165, 192, 246, 250);
+    /*Títulos de fila con color de fondo con transparencia rgba */
+    text-align: center;
+}
+
+/* Primera fila - Cabecera de la tabla */
+
+thead th {
+    height: 30px;
+    background-color: #6395ec;
+    color: white;
+    font-weight: bold;
+    padding-left: 15px;
+    /* He elegido se parezca al ejemplo - Enunciado pide centrado */
+}
+
+/* Nucleo de la tabla */
+
+tbody td {
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Primera fila del núcleo de la tabla */
+
+tbody tr:nth-child(1) td {
+    background-color: #d7e5ff;
+}
+
+/* Segunda fila del núcleo de la tabla */
+
+tbody tr:nth-child(2) td {
+    background-color: #abc6fb;
+}
+
+/* Tercera fila del núcleo de la tabla */
+
+tbody tr:nth-child(3) td {
+    background-color: #d7e5ff;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Cuarta fila del núcleo de la tabla */
+
+tbody tr:nth-child(4) td {
+    background-color: #abc6fb;
+}
+
+
+/* COLORS   imagecolorpicker.com
+
+header:     #6395ec     rgba(99,149,236,255)
+thead:      Idem
+teven:      #d7e5ff     rgba(215,229,255,255)
+tuneven:    #abc6fb     rgba(171,198,251,255)
+tcolumn-left:   #a5c0f6 rgba(165,192,246,255)
+
+Libretas text:  #2f1819 rgba(47,24,25,255)
+DESCANSO text:  #14070a rgba(20,7,10,255)  */

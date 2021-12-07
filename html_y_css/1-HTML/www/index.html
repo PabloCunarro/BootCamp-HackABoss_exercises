@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackABoss_Ejercicio 1_evaluable-HTML</title>
+    <meta name="description" content="Ejercicios evaluados JSB08VI - 2021"/>
+    <meta name="author" content="Pablo Fernández Cuñarro"/>
+  </head>
+
+  <body>
+
+    <header>
+
+        <h1 id="page-title" class="h1-titles">Pastoreando</h1>
+
+        <nav>
+          <ul id="navigation">
+            <li><a href="#my-topten">MI TOP 10 películas</a></li>
+            <li><a href="#my-tryp">Mi viaje a Japón</a></li>
+            <li><a href="#footer-header">Mándame un mensaje</a></li>
+          </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+      <article>
+
+        <header id="my-topten" class="article-header">
+          <h2 class="h2-titles">
+            <span class="h2-big">MI TOP 10</span>
+            <span class="h2-small">PELÍCULAS</span>
+          </h2>
+        </header>
+
+        <section class="article-body">
+          <ol id="films-list">
+            <li>El padrino</li>
+            <li>La lista de Schindler</li>
+            <li>El padrino. Parte II</li>
+            <li>Cadena perpetua</li>
+            <li>Pulp Fiction</li>
+            <li>El Rey León</li>
+            <li>Forrest Gump</li>
+            <li>La vida es bella</li>
+            <li>Gladiator</li>
+            <li>Coco</li>
+          </ol>
+        </section>
+
+      </article>
+
+      <article>
+
+        <header id="my-tryp" class="article-header">
+
+          <h2 class="h2-titles">
+            <span class="h2-big">M</span>
+            <span class="h2-small">I VIAJE A </span>
+            <span class="h2-big">J</span>
+            <span class="h2-small">APÓN </span>
+          </h2>
+
+        </header>
+
+        <section class="article-body">
+
+          <img src="images/Photo_from_Japan.png" alt="imagen de Japón"/>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nesciunt architecto necessitatibus, delectus veniam accusamus dolores earum debitis accusantium voluptatum vel voluptate fuga molestias rerum fugit odio facilis perferendis pariatur praesentium totam quaerat tempora cum laboriosam! Earum obcaecati repellat qui quia corporis deserunt doloribus ipsam nisi. Quo qui officia debitis necessitatibus alias similique dolores asperiores, nesciunt, repudiandae perferendis laborum! Deleniti incidunt, fugiat repudiandae porro est quidem dolor a reiciendis sapiente nemo sequi magnam enim praesentium sint adipisci tenetur! Debitis dignissimos, dolores sed provident illum voluptate quasi facilis tempora rem recusandae ipsa repellendus placeat animi quos pariatur tempore itaque temporibus omnis ex alias quas blanditiis. Quia repellat minus corrupti eaque, ullam aliquam corporis suscipit amet dolore sint vitae ipsam, nihil quidem?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corporis eum suscipit ullam ut est voluptates quidem nostrum nihil? Quos doloremque assumenda unde ab? Quasi quae reiciendis esse quod alias iure. Qui magni ratione quae dignissimos inventore sint, quos libero nobis provident accusantium cum quasi neque eveniet quam quod voluptatem sapiente officiis commodi enim nulla. Obcaecati eos quam fuga eaque.</p>
+
+        </section>
+
+      </article>
+
+      <section id="user-messages">
+
+        <h2 class="h2-titles">
+          <span class="h2-big">M</span>
+          <span class="h2-small">ÁNDAME UN MENSAJE </span>
+        </h2>
+
+        <form action="/">
+
+          <ul>
+
+            <li>
+              <label for="user-name">
+                Nombre:
+                <input type="text" autofocus name="user-name" placeholder="" id="user-name">
+              </label>
+            </li>
+
+            <li>
+              <label for="user-mail">
+                Email:
+                <input type="email" required name="user-mail" placeholder="" id="user-mail">
+              </label>
+
+            </li>
+
+            <li>
+              <label for="user-birth_date">
+                Fecha de nacimiento:
+                <input type="date" name="user-birth_date" placeholder="" id="user-birth_date">
+              </label>
+            </li>
+
+            <li>
+              <label for="user-coments">
+                Comentarios: <br>
+                <textarea name="user-coments" cols="50" rows="4" id="user-coments"></textarea>
+              </label>
+            </li>
+
+            <li>
+              <label for="user-subscription">
+                <input type="checkbox" name="user-subscription" id="user-subscription">
+                Suscribirse a newsletter
+              </label>
+            </li>
+
+          </ul>
+
+          <button type="submit" id="sending-button">Enviar</button>
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <aside>
+
+      <header id="aside-header">
+        <img src="images/AnaPastor_photo.png" alt="imagen de la autora"/>
+        <h2 class="h2-titles" class="h2-big">ANA PASTOR</h2>
+      </header>
+
+      <section id="my-things-in-Aside">
+        <p class="aside-text">Aquí escribo todo lo que se me ocurre</p>
+      </section>
+
+      <footer id="aside-footer">
+        <a id="my-things-link" href="ana.pastor@example.com" title="link to my page" target="_blank" rel="noopener noreferrer">ana.pastor@example.com</a>
+      </footer>
+
+    </aside>
+
+  </body>
+
+  <footer>
+
+    <section id="footer-links">
+
+        <p>
+          <a rel="noopener noreferer" target="_blank" title="Terminos-condiciones" href="/">Términos y condiciones</a>
+          <span> | </span>
+          <a rel="noopener noreferer" target="_blank" title="politica-privacidad" href="/">Política de privacidad</a>
+        </p>
+
+    </section>
+
+  </footer>
+
+</html>
